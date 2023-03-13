@@ -45,7 +45,10 @@ output = a*b
 def list1():
     L = [1,3,2,4,5,7,6,8]
     L.sort()
-    
+
+print(timeit.timeit(list1))
+# so you can make a function that takes no inputs and has no outputs (so it's really a proceedure) and then time how long it does a string of commands 
+
 if __name__ == '__main__':
     print(timeit.timeit("list1()", setup = "from __main__ import list1"))
 
@@ -123,7 +126,7 @@ arr = [64, 34, 25, 12, 22, 11, 90, 74]
 bubbleSort(arr)
 '''
 
-test_code1 = 
+# test_code1 = 
 
 setup_code2='''
 from __main__ import bubbleSort
